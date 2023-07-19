@@ -1,3 +1,4 @@
+"use client"
 import { Player } from "@remotion/player";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -5,8 +6,11 @@ import { useEffect, useState } from "react";
 import { useLambda } from "../hooks/useLambda";
 import { MyComposition } from "../remotion/MyComp/Composition";
 import { defaultMyCompProps } from "../types/MyComp";
+import '../styles/global.css'
+import { VideoOnCanvas } from "../remotion/MyComp/VideoOnCanvas";
 
-const Home: NextPage = () => {
+
+const Index: NextPage = () => {
   const [props, setProps] = useState(defaultMyCompProps);
   const [text, setText] = useState(JSON.stringify(props, null, 2));
 
@@ -23,7 +27,7 @@ const Home: NextPage = () => {
       </Head>
       <div className="max-w-screen-md m-auto mb-20">
         <Player
-          component={MyComposition}
+          component={VideoOnCanvas}
           inputProps={props}
           durationInFrames={120}
           fps={30}
@@ -89,4 +93,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Index;

@@ -1,5 +1,6 @@
 import { Composition } from "remotion";
 import { MyComposition } from "./MyComp/Composition";
+import { VideoOnCanvas } from "./MyComp/VideoOnCanvas";
 import "../styles/global.css";
 import { defaultMyCompProps } from "../types/MyComp";
 
