@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { renderStillOnLambda, RenderStillOnLambdaOutput } from '@remotion/lambda'
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { config } from '../../config'
+import { config } from '../../config.mjs'
 
 export default async function still(
   req: NextApiRequest,

@@ -1,6 +1,6 @@
 'use client';
 
-import { useSupabase } from '../pricing/supabase-provider';
+import { useSupabase } from '../supabase/supabase-provider';
 import { getURL } from '../../utils/helpers';
 import { Auth } from '@supabase/auth-ui-react';
 import { ThemeSupa } from '@supabase/auth-ui-shared';
@@ -11,7 +11,7 @@ export default function AuthUI() {
     <div className="flex flex-col space-y-4">
       <Auth
         supabaseClient={supabase}
-        providers={['github']}
+        providers={['google']}
         redirectTo={`${getURL()}/auth/callback`}
         magicLink={true}
         appearance={{

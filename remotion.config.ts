@@ -1,7 +1,7 @@
-import {Config} from 'remotion';
-import {webpackOverride} from './webpack-override';
+import {Config} from '@remotion/cli/config';
+import {webpackOverride} from './webpack-override.mjs';
 
-Config.Rendering.setImageFormat('jpeg');
-Config.Output.setOverwriteOutput(true);
-
-Config.Bundling.overrideWebpackConfig(webpackOverride);
+Config.overrideWebpackConfig(webpackOverride);
+Config.setOverwriteOutput(true);
+Config.setStillImageFormat('jpeg');
+Config.setVideoImageFormat('jpeg');

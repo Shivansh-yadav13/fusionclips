@@ -1,4 +1,4 @@
-import SupabaseProvider from './supabase-provider';
+import SupabaseProvider from '../supabase/supabase-provider';
 import Footer from '../../components/ui/Footer';
 import Navbar from '../../components/ui/Navbar';
 import { PropsWithChildren } from 'react';

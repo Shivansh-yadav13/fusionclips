@@ -1,0 +1,11 @@
+.simple_text {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	/* bottom: 500px; */
+	bottom: 300px;
+	font-size: 90px;
+	color: #FFF;
+	text-shadow: 4px 10px 1px #bababa;
+	/* -webkit-text-stroke: 2px #FFF; */
+}

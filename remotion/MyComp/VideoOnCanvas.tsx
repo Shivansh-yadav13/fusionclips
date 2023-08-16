@@ -1,8 +1,15 @@
-import React, { useRef, useCallback, useEffect } from "react";
+import React, { useRef, useCallback, useEffect, useState } from "react";
 import { AbsoluteFill, Sequence, Video, useVideoConfig } from "remotion";
 import { Title } from "./HelloWorld/Title";
 
-export const VideoOnCanvas: React.FC = () => {
+type Caption = {
+  word: string
+  end: GLfloat
+  start: GLfloat
+  probability: GLfloat
+}
+// {captions} : {captions: [Caption]}
+export const VideoOnCanvas = () => {
   const video = useRef<HTMLVideoElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
   const { width, height } = useVideoConfig();
@@ -56,8 +63,7 @@ export const VideoOnCanvas: React.FC = () => {
       <AbsoluteFill>
         <Video
           ref={video}
-          // Hide the original video tag
-          style={{ opacity: 0 }}
+          style={{ opacity: 1 }}
           startFrom={300}
           src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
         />
