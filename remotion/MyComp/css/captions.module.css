@@ -1,0 +1,14 @@
+.simple_text {
+	position: absolute;
+	text-align: 'center';
+	width: 100%;
+	/* bottom: 500px; */
+	top: 200px;
+	right: 0px;
+	left: 420px;
+	font-size: 120px;
+	color: #FFFF;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px #000000, 0 15px 10px #000000, 15px 0 10px #000000, 0 -15px 10px #000000, -15px 0 10px #000000;
+	-webkit-text-stroke: 5px #000000;
+}
