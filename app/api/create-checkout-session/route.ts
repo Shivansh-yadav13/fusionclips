@@ -1,6 +1,6 @@
 import { cookies, headers } from 'next/headers';
 import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
-import { stripe } from '.../../../utils/stripe';
+import { stripe } from '../../../utils/stripe';
 import { createOrRetrieveCustomer } from '../../../utils/supabase-admin';
 import { getURL } from '../../../utils/helpers';
 import { Database } from '../../../types_db';
