@@ -41,7 +41,7 @@ export const POST = executeApi<RenderMediaOnLambdaOutput, typeof RenderRequest>(
       region: REGION as AwsRegion,
       serveUrl: SITE_NAME,
       composition: body.id,
-      inputProps: body.inputProps,
+      // inputProps: body.inputProps,
       framesPerLambda: 10,
       downloadBehavior: {
         type: "download",
