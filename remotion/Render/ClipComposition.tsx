@@ -3,8 +3,9 @@ import { AbsoluteFill, Audio, Sequence, Video, useCurrentFrame, useVideoConfig }
 import { Title } from "../Captions/TheBoldCaptions/Caption";
 import { useAudioData, visualizeAudio } from "@remotion/media-utils";
 
-export const clipCompositionProps: { videoURL: string } = {
+export const clipCompositionProps: { videoURL: string, captions: [object] } = {
   videoURL: "https://mzwpeqplxjiupysnwteo.supabase.co/storage/v1/object/public/temp_clip_bucket/fc7a6a6c-bb2b-4e16-9d30-0c3fdc53a65b/clip.mp4?t=2023-08-09T10%3A13%3A05.556Z",
+  captions: [{}]
 }
 
 export const ClipComposition = ({ videoURL, captions }: { videoURL: string, captions: [object] }) => {
