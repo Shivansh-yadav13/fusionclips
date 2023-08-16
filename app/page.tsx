@@ -1,7 +1,6 @@
 "use client"
 import type { NextPage } from "next";
-import { useEffect, useState } from "react";
-import { defaultMyCompProps } from "../types/MyComp";
+import { useState } from "react";
 import '../styles/global.css'
 import Card from "../components/web/Card";
 import Badge from "../components/web/Badge";
@@ -9,9 +8,7 @@ import CTAButton from "../components/web/CTAButton";
 import axios from "axios";
 
 const Index: NextPage = () => {
-  const [props, setProps] = useState(defaultMyCompProps);
   const [email, setEmail] = useState<string>();
-  const [text, setText] = useState(JSON.stringify(props, null, 2));
 
   const submitEmail = async (email: string) => {
     try {
@@ -35,10 +32,6 @@ const Index: NextPage = () => {
       console.log("Email is undefined")
     }
   }
-
-  useEffect(() => {
-    setProps(JSON.parse(text));
-  }, [text]);
 
   return (
     <div className="w-full">

@@ -11,7 +11,11 @@ export default function Navbar() {
   return (
     <div className='w-full py-5'>
       <nav className='w-3/5 mx-auto flex justify-between items-center'>
-        <h1 className='font-bold text-2xl'>Fusion<span className='text-prime'>Clips</span></h1>
+        <h1 className='font-bold text-2xl'>
+          <Link href="/" className='hover:text-prime_light'>
+            Fusion<span className='text-prime'>Clips</span>
+          </Link>
+        </h1>
         <ul className='flex justify-around w-1/3 text-light font-semibold items-center'>
           <li className='cursor-pointer'>
             <a href="#features" className='hover:text-prime_light'>
