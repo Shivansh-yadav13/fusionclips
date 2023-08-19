@@ -59,7 +59,7 @@ export default async function PricingPage() {
                         </a>
                     </div>
                 </div> */}
-                <div className="w-80 p-8 bg-gray-900 text-center rounded-3xl text-white border-4 shadow-xl border-white transform scale-125">
+                <div className="w-80 p-8 bg-black text-center text-white border-4 shadow-xl transform scale-125">
                     <h1 className="text-white font-semibold text-2xl">Streamer</h1>
                     <p className="pt-2 tracking-wide">
                         <span className="text-gray-400 align-top">$ </span>
@@ -100,12 +100,9 @@ export default async function PricingPage() {
                                 60 Minutes Long Video Support.
                             </span>
                         </p>
-                        <p className="w-full py-4 bg-prime mt-8 rounded-xl select-none">
+                        <p className="w-full py-4 bg-white text-black font-bold mt-8 rounded-xl select-none">
                             Coming Soon
                         </p>
-                    </div>
-                    <div className="absolute top-4 right-4">
-                        <p className="bg-blue-700 font-semibold px-4 py-1 rounded-full uppercase text-xs">Popular</p>
                     </div>
                 </div>
                 {/* <div className="w-96 p-8 bg-white text-center rounded-3xl pl-16 shadow-xl">

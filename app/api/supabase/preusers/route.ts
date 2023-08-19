@@ -4,11 +4,12 @@ export async function POST(request: Request) {
   if (request.method !== "POST") {
     return new Response("Method Not Allowed")
   }
-  const data = await request.json();
-  const { email } = data;
+  const reqdata = await request.json();
+  const { email } = reqdata;
   const supabase = createServerSupabaseClient();
+
   const { error } = await supabase
-    .from('preusers')
+    .from('emaillist')
     .insert({ email:  email});
   if (error)  {
     console.log(error);

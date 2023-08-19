@@ -5,8 +5,8 @@ import Navbar from '../components/web/Navbar';
 import '../styles/global.css'
 
 export const metadata = {
-  title: 'ClipApp',
-  description: 'Auto',
+  title: 'FusionClips AI',
+  description: 'Convert Booring 😪 Live Streams or Videos to Attention 👀 Grabbing Clips.'
 }
 
 export default function RootLayout({

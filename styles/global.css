@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  background-color: black;
-  color: #fff;
-  transition: all;
+body {
+  background-color: white;
+  color: black;
+  /* transition: all; */
 }

@@ -9,12 +9,18 @@ module.exports = {
     './src/**/*.{ts,tsx}',
 	],
   theme: {
-    colors: {
-      'prime': '#0085FF',
-      'secondary': '#190061',
-      'dark': '#282828',
-      'bright': '#3500D3',
-      'dull': '#240090'
+    extend: {
+      colors: {
+        'prime': '#fff',
+        'secondary': '#190061',
+        'dark': '#282828',
+        'bright': '#3500D3',
+        'dull': '#240090',
+        'discord': '#7289d9',
+      },
     },
   },
+  plugins: [
+    require("@designbycode/tailwindcss-text-shadow"),
+  ]
 }

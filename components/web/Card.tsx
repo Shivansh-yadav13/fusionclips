@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Card({ title, emo, desc }: { title: string, emo: string, desc: string }) {
   return (
-    <div className='w-fit flex'>
+    <div className='w-fit flex sm:my-10'>
       <div className="flex justify-start gap-2">
         <h1 className="text-4xl">{emo}</h1>
       </div>
