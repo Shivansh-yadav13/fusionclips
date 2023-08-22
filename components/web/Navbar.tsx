@@ -14,13 +14,14 @@ export default function Navbar() {
     <div className='w-full py-5'>
       <nav className='xl:w-3/5 mx-auto flex xl:justify-between sm:justify-evenly items-center'>
         <h1 className='font-bold text-2xl'>
-          <Link href="/" className='hover:text-prime_light'>
+          <Link href="/" className='flex items-center hover:text-prime_light'>
             <Image src="/fclogo.png" width="50" height="50"  alt='logo' />
+            <h1 className='text-xl font-extrabold'>Fusion Clips AI</h1>
           </Link>
         </h1>
         <ul className='flex justify-around lg:justify-end sm:justify-between lg:gap-20 w-full text-light font-semibold items-center'>
           <li className='cursor-pointer'>
-            <a href="#features" className='hover:text-prime_light'>
+            <a href="/#features" className='hover:text-prime_light'>
               Features
             </a>
           </li>
@@ -28,6 +29,11 @@ export default function Navbar() {
             <Link href="/pricing" className='hover:text-prime_light'>
               Pricing
             </Link>
+          </li>
+          <li className='cursor-pointer'>
+            <a href="/blogs" className='hover:text-prime_light'>
+              Blogs
+            </a>
           </li>
           <li className='cursor-pointer'>
             <DiscordBtn />

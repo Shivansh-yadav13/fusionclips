@@ -1,5 +1,5 @@
 "use client"
-import type { NextPage } from "next";
+import type { Metadata, NextPage } from "next";
 import { useState } from "react";
 import '../styles/global.css'
 import Image from "next/image";
@@ -42,10 +42,14 @@ const Index: NextPage = () => {
         <div className="xl:flex justify-around mx-auto text-center">
             <video className="border-4 my-10 mx-auto xl:mx-0" width={288} src="/video_1.mp4" muted autoPlay loop></video>
             <div className="xl:w-3/6 pt-20 text-3xl sm:w-full sm:text-5xl md:text-5xl 2xl:text-7xl">
-              <h1 className="xl:text-center font-bold">Boooring Streams to Attention 👀 Grabbing</h1>
-              <h1 className="xl:text-center font-bold">Clips Using <span className="text-white text-shadow text-shadow-blur-8 text-shadow-x-1 text-shadow-y-1">Fusion</span> AI🤖</h1>
-              <CTAButton text="Get Started" />
-              <div className="w-fit mx-auto">
+              <h1 className="lg:text-start font-bold">Convert Boooring 😪</h1>
+              <h1 className="lg:text-start font-bold">📺 Live Streams to <span className="text-white text-shadow text-shadow-y-4 text-shadow-gray-400">Attention</span> 👀 Grabbing</h1>
+              <h1 className="lg:text-start font-bold">Clips 🎞️ Using</h1>
+              <h1 className="lg:text-start font-bold"><span className="text-white text-shadow text-shadow-y-4 text-shadow-gray-400">Fusion</span> AI🤖</h1>
+              <div className="absolute blur-3xl -z-10 -bottom-32 xl:top-52 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply"></div>
+              <div className="absolute blur-3xl -z-10 -bottom-52 right-96 xl:top-48 xl:right-96 xl:mr-5 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply"></div>
+              <div className="w-fit lg:text-start lg:flex mx-auto lg:mx-0 items-center gap-5">
+                <CTAButton text="Get Started" />
                 <a href="https://www.producthunt.com/posts/fusionclips?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-fusionclips" target="_blank">
                   <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=410171&theme=light" alt="FusionClips - Convert&#0032;boring&#0032;streams&#0032;to&#0032;funny&#0032;attention&#0032;grabbing&#0032;clips | Product Hunt" style={{width: "250px", height: "54px;"}} width="250" height="54" />
                 </a>

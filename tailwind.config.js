@@ -2,7 +2,6 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './components/**/*.{module.css,css}',
     './app/**/*.{ts,tsx}',
@@ -22,5 +21,6 @@ module.exports = {
   },
   plugins: [
     require("@designbycode/tailwindcss-text-shadow"),
+    require("@tailwindcss/typography")
   ]
 }
