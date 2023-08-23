@@ -39,15 +39,15 @@ const PostPage = (props: any) => {
   ))
 
   return (
-    <div className='w-full flex justify-center mt-20'>
-      <div className='border-r-2 mx-10'>
-        <h1 className='font-semibold italic text-lg'>Read More Latest Articles</h1>
-        {postPreviews}
+    <div className='w-full flex justify-around mt-20'>
+      <div className=''>
+        <article className='prose xl:prose-xl'>
+          <Markdown>{post.content}</Markdown>
+        </article>
       </div>
-      <div className='w-fit'>
-      <article className='prose lg:prose-xl'>
-        <Markdown>{post.content}</Markdown>
-      </article>
+      <div>
+        <h1 className='font-semibold italic text-2xl text-center'>Read More Latest Articles</h1>
+        {postPreviews}
       </div>
     </div>
   )

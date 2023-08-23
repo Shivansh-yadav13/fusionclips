@@ -71,7 +71,7 @@ const Index: NextPage = () => {
                 </span> Access to the Feature</p>
             </div>
           </div>
-          <form className="flex">
+          <form className="flex" id="#waitlist">
             {
               waitlist ?
               <div>
