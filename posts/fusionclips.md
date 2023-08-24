@@ -1,12 +1,12 @@
 ---
-title: "Introduction to Fusion Clips AI - The Ultimate Tool for Gamers and Content Creators"
+title: "The Ultimate Tool for Gamers and Content Creators"
 subtitle: "How FusionClips AI can 10x the content creation process for gamers."
 img: "/blog/fcblog.jpg"
 data: "2023-08-21"
 ---
 
 ![fusion-clips](/blog/fcblog.jpg)
-# Introduction to Fusion Clips AI - The Ultimate Tool for Gamers and Content Creators
+# Fusion Clips AI - The Ultimate Tool for Gamers and Content Creators
 Are you tired of spending hours sifting through your live streams and videos to find the best moments to share on social media? Do you want to create high-performing short-form content that engages your audience and grows your fanbase? If you answered yes to these questions, then Fusion Clips AI is the tool you need!
 
 ## What is Fusion Clips AI?

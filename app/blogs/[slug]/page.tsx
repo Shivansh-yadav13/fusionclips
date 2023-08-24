@@ -25,7 +25,16 @@ export const generateStaticParams = async () => {
 
 export async function generateMetadata(params: any): Promise<Metadata> {
   const post = getSinglePageMetadata(params.params.slug);
-  return { title: post.title, description: post.subtitle }
+  return { 
+    title: post.title,
+    description: post.subtitle,
+    alternates: {
+      canonical: `https://www.fusionclips.pro/blogs/${post.slug}`,
+    },
+    verification: {
+      google: "google-site-verification=Qo7kzugZ6Qh4lkWhT-LxDdoxgxrDUc2KmRevHHURVaU"
+    }
+  }
 }
 
 const PostPage = (props: any) => {
@@ -39,13 +48,13 @@ const PostPage = (props: any) => {
   ))
 
   return (
-    <div className='w-full flex justify-around mt-20'>
+    <div className='flex justify-around mt-20'>
       <div className=''>
         <article className='prose xl:prose-xl'>
           <Markdown>{post.content}</Markdown>
         </article>
       </div>
-      <div>
+      <div className='sticky top-0'>
         <h1 className='font-semibold italic text-2xl text-center'>Read More Latest Articles</h1>
         {postPreviews}
       </div>
