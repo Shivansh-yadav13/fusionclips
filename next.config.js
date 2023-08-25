@@ -6,7 +6,10 @@ const nextConfig = {
     appDir: true,
     serverActions: true,
   },
-  output: "standalone"
+  output: "standalone",
+  images: {
+    domains: ['img.icons8.com']
+  }
 }
 
 module.exports = nextConfig

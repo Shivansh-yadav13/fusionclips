@@ -1,7 +1,7 @@
 export default async function PricingPage() {
   return (
     <>
-    <div className="min-h-screen flex justify-center items-center">
+    <div className="min-h-screen -z-20 flex justify-center items-center">
         <div className="">
             <div className="text-center font-semibold">
                 {/* <h1 className="text-5xl">
@@ -73,7 +73,7 @@ export default async function PricingPage() {
                                 🤣
                             </span>
                             <span className="pl-2">
-                                Scrape All Funny Content from Long Video/Stream.
+                                Scrape All Funny & Attention Grabbing Content from Long Video/Stream.
                             </span>
                         </p>
                         <p className="font-semibold text-gray-400 text-left pt-5">

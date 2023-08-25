@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import getPostMetadata from '../../helpers/metadata-gen'
 import BlogPreview from '../../components/web/BlogPreview'
 
@@ -8,9 +7,9 @@ const BlogPage = () => {
       <BlogPreview key={post.slug} {...post} />
   ))
   return (
-      <div className='w-full'>
-          <h1 className='font-bold text-4xl italic text-center my-20'>FusionClips AI Blogs</h1>
-        <div className='flex justify-center'>
+      <div className='-z-20'>
+        <h1 className='font-bold text-4xl italic text-center my-10'>FusionClips AI Blogs</h1>
+        <div className='w-full xl:inline-grid xl:grid-cols-3'>
           {postPreviews}
         </div>
       </div>

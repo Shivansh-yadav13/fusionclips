@@ -26,10 +26,12 @@ export default function RootLayout({
     <html lang="en" className='dark'>
       <body>
         <SupabaseProvider>
-          <Navbar />
-          {/* <Banner /> */}
-          {children}
-          <Footer />
+          <div className='flex flex-col h-screen justify-between'>
+            <Navbar />
+            {/* <Banner /> */}
+            {children}
+            <Footer />
+          </div>
         </SupabaseProvider>
       </body>
     </html>

@@ -7,6 +7,7 @@ import Card from "../components/web/Card";
 import Badge from "../components/web/Badge";
 import CTAButton from "../components/web/CTAButton";
 import axios from "axios";
+import Link from "next/link";
 
 const Index: NextPage = () => {
   const [email, setEmail] = useState<string>();
@@ -37,19 +38,21 @@ const Index: NextPage = () => {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full -z-20">
       <div className="w-full lg:px-32 mx-auto">
-        <div className="xl:flex justify-around mx-auto text-center">
-            <video className="border-4 my-10 mx-auto xl:mx-0" width={288} src="/video_1.mp4" muted autoPlay loop></video>
-            <div className="xl:w-3/6 pt-20 text-3xl sm:w-full sm:text-5xl md:text-5xl 2xl:text-7xl">
-              <h1 className="lg:text-start font-bold">Convert Boooring 😪</h1>
-              <h1 className="lg:text-start font-bold">📺 Live Streams to <span className="text-white text-shadow text-shadow-y-4 text-shadow-gray-400">Attention</span> 👀 Grabbing</h1>
-              <h1 className="lg:text-start font-bold">Clips 🎞️ Using</h1>
-              <h1 className="lg:text-start font-bold"><span className="text-white text-shadow text-shadow-y-4 text-shadow-gray-400">Fusion</span> AI🤖</h1>
+        <div className="2xl:flex 2xl:justify-between 2xl:w-2/3 2xl:gap-20 mt-10 mx-auto text-center">
+            <video className="border-4 hidden 2xl:block" width={288} src="/video_1.mp4" muted autoPlay loop></video>
+            <div className="text-start text-6xl font-bold mx-5">
+              <h1 className="">Convert 😪 Boooring</h1>
+              <h1 className="">Live 📺 Streams to <span className="text-yellow-400">Attention</span> 👀 Grabbing</h1>
+              <h1 className="">Clips 🎞️ Using</h1>
+              <h1 className=""><span className="text-white text-shadow text-shadow-y-1 text-shadow-gray-400">Fusion</span> AI🤖</h1>
               <div className="absolute blur-3xl -z-10 -bottom-32 xl:top-52 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply"></div>
               <div className="absolute blur-3xl -z-10 -bottom-52 right-96 xl:top-48 xl:right-96 xl:mr-5 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply"></div>
-              <div className="w-fit lg:text-start lg:flex mx-auto lg:mx-0 items-center gap-5">
-                <CTAButton text="Get Started" />
+              <div className="w-fit xl:flex items-center justify-start gap-5">
+                <Link href="#features">
+                  <button className="text-xs text-white bg-black p-4 m-2">Get Started</button>
+                </Link>
                 <a href="https://www.producthunt.com/posts/fusionclips?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-fusionclips" target="_blank">
                   <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=410171&theme=light" alt="FusionClips - Convert&#0032;boring&#0032;streams&#0032;to&#0032;funny&#0032;attention&#0032;grabbing&#0032;clips | Product Hunt" style={{width: "250px", height: "54px;"}} width="250" height="54" />
                 </a>
@@ -61,12 +64,12 @@ const Index: NextPage = () => {
           <Badge text="New" color="pink" />
           </div>
           <div id="features" className="w-full flex justify-center">
-            <div className="2xl:w-3/5 lg:w-full">
-              <h1 className="mx-auto font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl text-center">
+            <div className="2xl:w-2/3">
+              <h1 className="font-bold text-5xl text-center">
                 Tired 😴 of watching your long Streams 📺 to find Content ?
               </h1>
               <p className="text-center mt-5 text-xl sm:text-xl 2xl:text-3xl text-light sm:mx-2">Using AI 🤖 convert your long boooring streams to Funny Attention 👀 Grabbing Clips</p>
-              <p className="text-center text-light">Join the Waiting List to get <span>
+              <p className="text-center text-light text-lg">Join the Waiting List to get <span>
               <Badge text="FREE" color="green" />
                 </span> Access to the Feature</p>
             </div>
@@ -99,7 +102,7 @@ const Index: NextPage = () => {
           </form>
         </div>
         <div className="flex justify-center">
-          <div className="mt-20 w-1/2 xl:inline-grid xl:grid-cols-2 gap-4 pb-40">
+          <div className="mt-20 xl:w-2/3 lg:inline-grid lg:grid-cols-2 mx-5 flex flex-col gap-5">
             <Card title="AI Funny Clip Finder" emo="🔎" desc="Using AI find the most Engaging & Funny Clips from your video/live-streams." />
             <Card title="AI Generated Captions" emo="🆎" desc="Auto Generated Captions with the use of Automatic Speech Recognition (ASR) system which supports 98 Languages." />
             <Card title="Emojis Support" emo="😊" desc="Automatic Emojis added in each sentence to glow up the captions." />
